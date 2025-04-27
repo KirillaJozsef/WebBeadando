@@ -1,0 +1,169 @@
+#menu {
+    display: none;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Erősebb árnyék a jobb láthatóságért */
+    background: linear-gradient(to bottom, #3a1d61, #c6c90b); /* Lila és zöld átmenet háttér */
+    padding: 5px;
+    text-align: justify;
+    color: white; /* Fehér szöveg szín */
+    font-size: 18px;
+    max-width: 1200px;
+    margin: auto;
+    overflow: auto;
+}/* Alapértelmezett stílus PC-re */
+
+/* Kisebb képernyők (pl. tabletek, mobilok) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        max-width: 95%;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+
+/* Konténer a szöveghez */
+.container {
+    left: 20%;
+    max-width: 750px ;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.6); /* Fekete áttetsző háttér */
+    backdrop-filter: blur(8px); /* Elmosódás a háttérre */
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Fehér árnyék */
+    color: white; /* Fehér szöveg szín */
+}
+
+/* Címek */
+h2 {
+    font-size: 24px;
+    color: #FFD700; /* Arany szín */
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Bekezdések */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white; /* Fehér szöveg szín */
+}
+
+/* Linkek */
+a {
+    color: #FFD700; /* Arany szín */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FF6347; /* Világos piros szín hover esetén */
+}
+
+/* Menü navigáció */
+nav ul {
+    display: flex; /* Vízszintes elrendezés */
+    justify-content: center; /* Középre igazítás */
+    list-style: none; /* Alapértelmezett lista stílus eltávolítása */
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Távolság az elemek között */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Fehér szín */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(103, 82, 218, 0.2);
+    border-radius: 5px;
+    color: #FFD700; /* Arany szín hover esetén */
+}
+
+/* Menü háttér */
+.bg-pan-tl {
+    background: url('hatter.jpg'),url('blog.jpg'); 
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    min-height: 100vh; /* min-height, hogy mindig kitöltse a képernyőt */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+
+/* Átlátszó footer */
+footer.transparent-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    padding: 1px;
+    backdrop-filter: blur(3px);
+    z-index: 99;
+}
+
+img{
+    width: auto;
+    height: 220px;;
+}
+
+.fixed-image {
+    transform: scaleX(-1); 
+    position: fixed;
+    right: 15% auto; 
+    top: 15%; 
+    transform: translateY(-50%); 
+    width: 200px;
+    height: auto; 
+    border-radius : 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Alapból elrejtve, csak görgetéskor jelenjen meg */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+
+}
+
+#scrollToTop:hover {
+    background-color: #ffaa00;
+}
+nav ul li a.active {
+    background-color: rgba(6, 50, 133, 0.5); /* Kiemelés */
+    color: #58065f; /* Kontrasztos szín */
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+}
